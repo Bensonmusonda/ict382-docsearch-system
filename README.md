@@ -25,7 +25,7 @@ The system is designed with three primary subsystems:
 
 3.  **Subsystem 3: Aggregation, Search, and Ranking API (Python)**
     * Aggregates document data (content and metadata) by pulling from the APIs of both Subsystem 1 and Subsystem 2.
-    * Builds a searchable index (initially described as an inverted index, but the provided code for `subsystem 3` uses FAISS for vector embeddings and similarity search) to enable fast full-text search.
+    * Builds a searchable index to enable fast full-text search.
     * Implements a ranking function to order search results by relevance (e.g., using TF-IDF, BM25, or cosine similarity with vector embeddings).
     * Provides a RESTful API for users to search documents using keywords.
     * [Source: MSc_CourseWork_ICT382_2025.pdf, Subsystem 3 Detailed Specifications & User-provided code context]

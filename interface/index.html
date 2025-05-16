@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DocSearch</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-left">
+                <h1 id="nav-logo" class="sitename"><span class="blue-text">Doc</span>Search</h1>
+            </div>
+            <div class="nav-right">
+                <p id="account"><a href="#login" class="blue-text">login</a> or <a href="#signup" class="blue-text">signup</a></p>
+            </div>
+        </nav>
+        <span id="line">
+        <main>
+            <div class="welcome-message">
+                <p class="welcome">Welcome to <span class="sitename"><span class="blue-text">Doc</span>Search</span>.</p>
+                <p class="find-and-share">Find and share documents</p>
+            </div>
+            <form>
+                <div class="search">
+                    <input type="text" name="search-box" id="search-box" placeholder="Enter search term">
+                    <button id="submit">search</button>
+                </div>
+                
+            </form>
+            <span class="loading-bar"></span>
+            <div id="search-results"></div>
+        </main>
+        <script src="scripts/index.js"></script>
+    </body>
+</html>

@@ -1,12 +1,12 @@
 
 # DocSearch System (ICT382 Coursework)
 
-## 🧩 Project Objective
+## Project Objective
 This project, "Document Storage and Search System," aims to develop a multi-component system for managing, storing, and efficiently searching documents. It comprises three distinct subsystems that collaborate to provide robust document handling, storage redundancy/variety (with Java and Python backends for storage), and advanced search capabilities with relevance ranking. The system emphasizes smooth API-driven communication between its components.
 
 [Source: MSc_CourseWork_ICT382_2025.pdf, Project Overview]
 
-## 🏗 System Architecture
+## System Architecture
 The system is designed with three primary subsystems:
 
 1.  **Subsystem 1: Document Storage & Metadata API (Java & MySQL)**
@@ -36,7 +36,7 @@ The system is designed with three primary subsystems:
 
 [Source: MSc_CourseWork_ICT382_2025.pdf, Project Overview & Subsystem descriptions]
 
-## 🧱 Tech Stack
+## Tech Stack
 
 * **Subsystem 1 (Document Storage):**
     * Language: Java (Version 17+ indicated by Spring Boot typical requirements)
@@ -65,7 +65,7 @@ The system is designed with three primary subsystems:
 * **Version Control:**
     * Git & GitHub
 
-## 🔁 Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 * Java JDK (version 17 or higher recommended for modern Spring Boot)
@@ -98,7 +98,7 @@ Detailed setup instructions are available in the README file of each respective 
 * **Subsystem 2 (Python/FastAPI):** Navigate to `subsystem 2/`, create/activate a Python virtual environment, install dependencies (`pip install -r requirements.txt`), and run with Uvicorn.
 * **Subsystem 3 (Python/FastAPI):** Navigate to `subsystem 3/`, create/activate a Python virtual environment, install dependencies (`pip install -r requirements.txt`), and run with Uvicorn.
 
-## 🧪 How to Run & Test It
+## How to Run & Test It
 
 1.  **Start Subsystem 1 (Java Document Storage API):**
     * Directory: `subsystem 1/`
@@ -137,7 +137,7 @@ Detailed setup instructions are available in the README file of each respective 
     * Test scalability.
     * [Source: MSc_CourseWork_ICT382_2025.pdf, Performance Testing]
 
-## 📁 Folder Structure Summary
+## Folder Structure Summary
 
 ```text
 .
@@ -195,6 +195,6 @@ Detailed setup instructions are available in the README file of each respective 
 └── README.md                 # This file (Main Project README)
 ````
 
-## 🙋‍♂️ Who built it
+## Who built it
 
 This project was created by Benson Musonda. ([GitHub Profile: Bensonmusonda](https://github.com/Bensonmusonda))

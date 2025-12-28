@@ -4,8 +4,6 @@
 ## Project Objective
 This project, "Document Storage and Search System," aims to develop a multi-component system for managing, storing, and efficiently searching documents. It comprises three distinct subsystems that collaborate to provide robust document handling, storage redundancy/variety (with Java and Python backends for storage), and advanced search capabilities with relevance ranking. The system emphasizes smooth API-driven communication between its components.
 
-[Source: MSc_CourseWork_ICT382_2025.pdf, Project Overview]
-
 ## System Architecture
 The system is designed with three primary subsystems:
 
@@ -14,27 +12,23 @@ The system is designed with three primary subsystems:
     * Stores document file paths and associated metadata (title, author, upload date, etc.) in a MySQL database.
     * Provides a RESTful API for document retrieval based on metadata.
     * Implemented using Java, Spring Boot, and **Gradle** for build management.
-    * [Source: MSc_CourseWork_ICT382_2025.pdf, Subsystem 1 Detailed Specifications & User Correction]
 
 2.  **Subsystem 2: Document Storage & Metadata API (Python & MySQL)**
     * Functionally similar to Subsystem 1, this subsystem also handles document uploads and storage.
     * It is implemented using Python (with a web framework like FastAPI or Flask) and MySQL.
     * Provides a RESTful API for retrieving document metadata or content.
     * The actual implementation, as per the provided code snippets, uses FastAPI for the API and also includes text extraction capabilities for uploaded files (PDF, DOCX, TXT) and stores the physical files.
-    * [Source: MSc_CourseWork_ICT382_2025.pdf, Subsystem 2 Detailed Specifications & User-provided code context]
 
 3.  **Subsystem 3: Aggregation, Search, and Ranking API (Python)**
     * Aggregates document data (content and metadata) by pulling from the APIs of both Subsystem 1 and Subsystem 2.
     * Builds a searchable index to enable fast full-text search.
     * Implements a ranking function to order search results by relevance (e.g., using TF-IDF, BM25, or cosine similarity with vector embeddings).
     * Provides a RESTful API for users to search documents using keywords.
-    * [Source: MSc_CourseWork_ICT382_2025.pdf, Subsystem 3 Detailed Specifications & User-provided code context]
 
 4.  **Interface: Frontend User Interface (HTML, CSS, JavaScript)**
     * A web-based interface allowing users to submit search queries.
     * Fetches and displays ranked search results by interacting with Subsystem 3's search API.
 
-[Source: MSc_CourseWork_ICT382_2025.pdf, Project Overview & Subsystem descriptions]
 
 ## Tech Stack
 
@@ -44,7 +38,7 @@ The system is designed with three primary subsystems:
     * Database: MySQL
     * API: RESTful
     * Build Tool: **Gradle**
-    * [Source: MSc_CourseWork_ICT382_2025.pdf, Subsystem 1 Specifications & User Correction]
+    * 
 * **Subsystem 2 (Document Storage):**
     * Language: Python (3.8+)
     * Framework: FastAPI (as per provided code snippets)
@@ -52,14 +46,13 @@ The system is designed with three primary subsystems:
     * API: RESTful
     * File Handling: PyPDF2, python-docx (for text extraction from PDF, DOCX)
     * ORM: SQLAlchemy (inferred from `database.py`, `crud.py`)
-    * [Source: MSc_CourseWork_ICT382_2025.pdf, Subsystem 2 Specifications & User-provided code context]
+
 * **Subsystem 3 (Search & Ranking):**
     * Language: Python (3.8+)
     * Framework: FastAPI
     * Indexing: FAISS (for vector similarity search, as per provided code)
     * Text Embedding: Sentence-Transformers (inferred from `vectorizer.model` usage)
     * API: RESTful
-    * [Source: MSc_CourseWork_ICT382_2025.pdf, Subsystem 3 Specifications & User-provided code context. Note: Coursework mentions inverted index, implementation uses vector search.]
 * **Frontend Interface:**
     * HTML, CSS, Vanilla JavaScript
 * **Version Control:**
@@ -89,8 +82,6 @@ The system is designed with three primary subsystems:
     * Configure database connection details:
         * For Subsystem 1: in `subsystem 1/src/main/resources/application.properties` or `application.yml`.
         * For Subsystem 2: likely in `subsystem 2/app/database.py` or via environment variables.
-
-[Source: MSc_CourseWork_ICT382_2025.pdf, Database Schema]
 
 ### Subsystem Setup
 Detailed setup instructions are available in the README file of each respective subsystem and the interface directory.
@@ -126,16 +117,13 @@ Detailed setup instructions are available in the README file of each respective 
 * **Unit Tests:**
     * Subsystem 1: Run with `./gradlew test` (or `gradlew.bat test`).
     * Subsystem 2 & 3: Python's `unittest` or `pytest` (e.g., `subsystem 2/test.py`). Focus on API endpoints, data validation, and core logic like text extraction (Subsystem 2) or indexing/ranking (Subsystem 3).
-    * [Source: MSc_CourseWork_ICT382_2025.pdf, Testing sections]
 * **Integration Tests:**
     * Verify Subsystem 3 can pull data from Subsystem 1 and Subsystem 2 APIs.
     * Test end-to-end search functionality: upload via Subsystem 1/2 -> reindex on Subsystem 3 -> search via Frontend/Subsystem 3 API.
-    * [Source: MSc_CourseWork_ICT382_2025.pdf, Integration Testing]
 * **API Testing:** Use tools like Postman, Insomnia, or `curl` for all backend APIs.
 * **Performance Testing (as per coursework):**
     * Measure search response time with increasing data.
     * Test scalability.
-    * [Source: MSc_CourseWork_ICT382_2025.pdf, Performance Testing]
 
 ## Folder Structure Summary
 
